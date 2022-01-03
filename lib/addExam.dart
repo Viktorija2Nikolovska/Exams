@@ -4,7 +4,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart' as intl;
 import 'dart:core';
 import 'homeExam.dart';
+// Да се имплементира апликација за термини за колоквиуми и испити. 
 
+// Темините студентот да може да ги додава со копче во AppBar. 
+
+// Сегментот за додавање да биде на истиот екран со листата на колоквиуми. 
+
+// Да се користи Листа од картички во која со Bold фонт ќе биде напишано името на предметот, а со сиви букви под него, датумот и времето.
 
 class AddExam extends StatefulWidget {
   final AddExamCallback callback;

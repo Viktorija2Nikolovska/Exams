@@ -40,12 +40,12 @@ class HomeState extends State<Home> {
         itemCount: examList.length,
         itemBuilder: (listViewContext, index) {
           return Card(
-            color: Colors.lightBlueAccent,
+            color: Colors.white,
             child: ListTile(
               title: Text(examList[index]["subjectName"].toString(),
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               subtitle: Text(examList[index]["dateAndTime"].toString(),
-                  style: TextStyle(fontSize: 17)),
+                  style: TextStyle(fontSize: 17, color:Colors.grey)),
               trailing: IconButton(
                 icon: Icon(Icons.delete, color: Colors.red),
                 onPressed: () {
