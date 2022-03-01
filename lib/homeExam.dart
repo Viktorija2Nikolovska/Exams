@@ -15,7 +15,7 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
- List<dynamic> examList = [];
+  List<dynamic> examList = [];
 
   void _addForm() {
     Navigator.push(
@@ -45,7 +45,7 @@ class HomeState extends State<Home> {
               title: Text(examList[index]["subjectName"].toString(),
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               subtitle: Text(examList[index]["dateAndTime"].toString(),
-                  style: TextStyle(fontSize: 17, color:Colors.grey)),
+                  style: TextStyle(fontSize: 17, color: Colors.grey)),
               trailing: IconButton(
                 icon: Icon(Icons.delete, color: Colors.red),
                 onPressed: () {
@@ -58,7 +58,6 @@ class HomeState extends State<Home> {
           );
         },
       ),
-    ); 
-    
+    );
   }
 }
