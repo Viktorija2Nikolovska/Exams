@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   intl: ^0.17.0
   shared_preferences: ^2.0.13
+  syncfusion_flutter_calendar: ^19.4.54
+  #fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +78,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
+  #  fonts:
+  #     - family: Nasalization
+  #       fonts:
+  #         - asset: fonts/nasalization-rg.ttf
+  #           weight: 700
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
