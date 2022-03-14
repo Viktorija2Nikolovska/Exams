@@ -37,7 +37,9 @@ dependencies:
   intl: ^0.17.0
   shared_preferences: ^2.0.13
   syncfusion_flutter_calendar: ^19.4.54
-  #fluttertoast: ^8.0.9
+  location: ^4.3.0
+  google_maps_flutter: ^2.1.2
+
 
 dev_dependencies:
   flutter_test:

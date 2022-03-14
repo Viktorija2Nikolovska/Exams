@@ -1,8 +1,12 @@
+
 import 'package:exams/addExam.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart' as intl;
 import 'dart:core';
+import 'addExam.dart';
+import 'addAppointment.dart';
+import 'showAppointments.dart';
 
 typedef AddExamCallback = void Function(
     String subjectNameController, String dateController);
@@ -21,6 +25,10 @@ class HomeState extends State<Home> {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => AddExam(_addExam)));
   }
+  void _showSchedule() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => AppointmentsHome()));
+  }
 
   void _addExam(String subjectName, String date) {
     setState(() {
@@ -34,7 +42,14 @@ class HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("Exams", style: TextStyle(color: Colors.black)),
         centerTitle: true,
-        actions: [IconButton(icon: Icon(Icons.add), onPressed: _addForm)],
+        actions: [IconButton(icon: Icon(Icons.add), onPressed: _addForm),
+          Tooltip(
+                message: "Show appointments",
+                child: IconButton(
+                  icon: Icon(Icons.schedule,
+                  
+                ), onPressed: _showSchedule),
+          ),]
       ), //AppBar
       body: ListView.builder(
         itemCount: examList.length,
